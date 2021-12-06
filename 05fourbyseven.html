@@ -7,7 +7,7 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
 <html>
 
 <head>
-    <title>Five</title>
+    <title>Four By Seven</title>
 </head>
 
 <body onload="draw()">
@@ -18,7 +18,7 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
 			—note that there are better ways to do this, but we’ll go with this technique for now. 
 	-->
 
-    <canvas id="sketch" width="300" height="300">
+    <canvas id="sketch" width="300" height="600">
         <!-- https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#6.0 
 			Let’s add a place to draw!. Use a pair of opening and closing tags called canvas… with attributes, id, width, and height.
 			—id will be used later in order to reference this particular canvas
@@ -40,7 +40,7 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
 
             // DRAW STUFF HERE!
 
-            context.fillStyle = "#0000ff";
+            context.fillStyle = "#000000";
             // FILL SHAPES WITH COLORS:
             // https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#15.0
             // context.fillStyle = "#00ff00" 
@@ -54,12 +54,8 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
             // or: https://htmlcolorcodes.com/
 
 
-            for (var i = 0; i <= 4; i++) {
-                // RECTANGLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#12.0
-                // context.fillRect(x, y, width, height);
-                context.fillRect((i * 30), 20, 25, 25);
-                context.fillRect((i * 30), 60, 25, 25);
-            }
+            context.fillRect(48, 48, 404, 404);
+
 
         }
 

@@ -40,7 +40,7 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
 
 			// DRAW STUFF HERE!
 
-			context.fillStyle = "#FAC54B";
+			context.fillStyle = "#00ff00";
 			// FILL SHAPES WITH COLORS:
 			// https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#15.0
 			// context.fillStyle = "#00ff00" 
@@ -53,10 +53,15 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
 			// https://color.adobe.com/create
 			// or: https://htmlcolorcodes.com/
 
-			// RECTANGLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#12.0
-			// context.fillRect(x, y, width, height);
-			context.fillRect(100, 50, 150, 75);
-
+			context.beginPath();
+			context.arc(50, 40, 40, 0, 2 * Math.PI, true);
+			context.closePath();
+			context.fill();
+			// CIRCLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#13.0
+			// context.beginPath();
+			// context.arc(x, y, radius, start angle, end angle, clockwise);
+			// context.closePath();
+			// context.fill();
 		}
 
 	</script>
