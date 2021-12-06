@@ -5,9 +5,11 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
 -->
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title></title>
 </head>
+
 <body onload="draw()">
 	<!-- https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#5.0
 		We’ll have to let the page know that it should start drawing once the entire page is loaded. 
@@ -29,45 +31,36 @@ https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#16
 
 	<script>
 		function draw() {
-		 	var sketch = document.getElementById('sketch');
+			var sketch = document.getElementById('sketch');
 			var context = sketch.getContext("2d");
-				// https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#9.0
-				// In order to draw on your canvas, you have to:
-				//	1. retrieve the canvas element from your page using the id
-				//	2. get the context from your canvas element (which is what we’ll be using to draw)		
-			
+			// https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#9.0
+			// In order to draw on your canvas, you have to:
+			//	1. retrieve the canvas element from your page using the id
+			//	2. get the context from your canvas element (which is what we’ll be using to draw)		
+
 			// DRAW STUFF HERE!
 
-			// RECTANGLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#12.0
-        		// context.fillRect(x, y, width, height);
-        	context.fillRect(40, 30, 100, 100);
-
-
-			context.fillStyle = "#00ff00";
+			context.fillStyle = "#FAC54B";
 			// FILL SHAPES WITH COLORS:
 			// https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#15.0
-				// context.fillStyle = "#00ff00" 
-					// "#ff0000" - RED
-					// "#00ff00" - GREEN
-					// "#0000ff" - BLUE
-					// "#000000" - BLACK
+			// context.fillStyle = "#00ff00" 
+			// "#ff0000" - RED
+			// "#00ff00" - GREEN
+			// "#0000ff" - BLUE
+			// "#000000" - BLACK
 
 			// find more HEX color codes: 
-				// https://color.adobe.com/create
-				// or: https://htmlcolorcodes.com/
+			// https://color.adobe.com/create
+			// or: https://htmlcolorcodes.com/
 
-			context.beginPath();
-			context.arc(50, 40, 40, 0, 2 * Math.PI, true);
-			context.closePath();
-			context.fill();
-			// CIRCLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#13.0
-				// context.beginPath();
-				// context.arc(x, y, radius, start angle, end angle, clockwise);
-				// context.closePath();
-				// context.fill();
+			// RECTANGLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#12.0
+			// context.fillRect(x, y, width, height);
+			context.fillRect(100, 50, 150, 75);
+
 		}
 
 	</script>
 
 </body>
+
 </html>
